@@ -1,0 +1,28 @@
+What is Pipedream?
+
+From the docs:
+	Pipedream is an integration platform for developers to build and run workflows that integrate apps and data.
+
+	Develop any workflow, based on any trigger.
+	Workflows are code, which you can run for free.
+	Workflows run serverlessly: you manage no infrastructure of your own.
+
+From me:
+	I have an idea:
+	Warning - not a practical idea
+	Build a dating site for werewolves and have it send email notifications on a full moon
+
+	every day - 
+	check the moon phase - 
+	if full - 
+	send email
+
+	PD comes in and say
+
+	every day (PD does this)
+	check the moon phase - 
+	if full - 
+	send email (PD does this)
+
+Every boring bit - done
+Every fun bit - for me!

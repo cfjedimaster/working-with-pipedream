@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Working with Pipedream</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Working with Pipedream</h1>
+				</section>
+
+				<section>
+					<h2>read.me</h2>
+					<ul>
+						<li>Raymond Camden</li>
+						<li>Senior Developer Evangelist for Adobe</li>
+						<li>Enterprise Cat Demo Builder</li>
+						<li>Second best "Just Dance 2019" player (in my house)</li>
+						<li>Blogging at raymondcamden.com</li>
+						<li>Tweeting @raymondcamden</li>
+					</ul>
+				</section>
+
+				<section>
+				<h2>What is Pipedream?</h2>
+				<aside class="notes">
+				One thing I like to do is look at how a service portrays itself in it's marketing
+				versus what it's like in the 'real world'...
+				</aside>
+				</section>
+
+				<section>
+				<img src="img/pd1.png">
+				<aside class="notes">
+				So this is pretty well done, but doesn't sell just exactly how incredible PD is, 
+				so let's consider an example
+				</aside>
+				</section>
+
+				<section>
+				<h2>App Idea!</h2>
+				<ul>
+				<li class="fragment">Million dollar idea, honest!</li>
+				<li class="fragment">Create a new Twitter account</li>
+				<li class="fragment">Every hour, tweet a random picture of a cat</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>App Idea - Implementation</h2>
+				<ul>
+				<li class="fragment">Set up a Node.js environment in production</li>
+				<li class="fragment">Make Twitter app</li>
+				<li class="fragment">Get Node SDK and setup credentials</li>
+				<li class="fragment">Find my random cat picture</li>
+				<li class="fragment">Upload picture to Twitter</li>
+				<li class="fragment">Create Tweet and associate picture</li>
+				<li class="fragment">Setup the schedule (CRON)</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>App Idea - Pipedream Implementation</h2>
+				<ul>
+				<li class="fragment"><s>Set up a Node.js environment in production</s></li>
+				<li class="fragment"><s>Make Twitter app</s></li>
+				<li class="fragment"><s>Get Node SDK and setup credentials</s></li>
+				<li class="fragment">Find my random cat picture</li>
+				<li class="fragment"><s>Upload picture to Twitter</s></li>
+				<li class="fragment"><s>Create Tweet and associate picture</s></li>
+				<li class="fragment"><s>Setup the schedule (CRON)</s></li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>I Blame Pipedream:</h2>
+				<ul>
+				<li class="fragment"><a href="https://twitter.com/randomcomicbook">@randomcomicbook</a></li>
+				<li class="fragment"><a href="https://twitter.com/randomtaylorbot">@randomtaylorbot</a></li>
+				<li class="fragment"><a href="https://twitter.com/npsbot">@npsbot</a></li>
+				<li class="fragment"><a href="https://twitter.com/moonpicbot">@moonpicbot</a></li>
+				<li class="fragment"><a href="https://twitter.com/randomgijoe">@randomgijoe</a></li>
+				<li class="fragment"><a href="https://twitter.com/generatorqueen">@generatorqueen</a></li>
+				<li class="fragment"><a href="https://twitter.com/superjoycat">@superjoycat</a></li>
+				</ul>
+				</section>
+
+				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
+				<h2>Q and A</h2>
+				<p>Be gentle please...</p>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				slideNumber:"c/t"
+			});
+		</script>
+	</body>
+</html>
