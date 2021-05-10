@@ -84,6 +84,10 @@
 				</section>
 
 				<section>
+					<img src="img/winning.jpg" class="r-stretch">
+				</section>
+
+				<section>
 				<h2>I Blame Pipedream:</h2>
 				<ul>
 				<li class="fragment"><a href="https://twitter.com/randomcomicbook">@randomcomicbook</a></li>
@@ -94,6 +98,102 @@
 				<li class="fragment"><a href="https://twitter.com/generatorqueen">@generatorqueen</a></li>
 				<li class="fragment"><a href="https://twitter.com/superjoycat">@superjoycat</a></li>
 				</ul>
+				</section>
+
+				<section>
+				<h2>Pipedream Basics:</h2>
+				<ul>
+				<li class="fragment">Workflows</li>
+				<li class="fragment">Combine pre-built apps + your code</li>
+				<li class="fragment">*Huge* amount of pre-build code</li>
+				<li class="fragment">Web-based editor</li>
+				<li class="fragment">Ability to share/fork workflows</li>
+				</ul>
+				<aside class="notes">
+				fork thing is how I built most of my twitter bots
+				</aside>
+				</section>
+
+				<section>
+				<h2>Pricing</h2>
+				<ul>
+				<li class="fragment">As of May 2021</li>
+				<li class="fragment"><a href="https://pipedream.com/pricing" target="_new">https://pipedream.com/pricing</a></li>
+				</ul>
+				<aside class="notes">
+				mention the caveat to 10k invocations being a lot
+				</aside>
+				</section>
+
+				<section>
+				<h2>Workflows</h2>
+				<ul>
+				<li class="fragment">Triggers (Event Sources)</li>
+				<li class="fragment">Steps:
+					<ul>
+						<li class="fragment">Actions</li>
+						<li class="fragment">Code</li>
+					</ul>
+				</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Triggers</h2>
+				<ul>
+				<li class="fragment">HTTP</li>
+				<li class="fragment">CRON</li>
+				<li class="fragment">Email</li>
+				<li class="fragment">App-based</li>
+				<li class="fragment">Write your own</li>
+				</ul>
+				<aside class="notes">
+				app based:
+				a google event is starting
+				new item posted to RSS feed
+				data modified in a db
+				msg in a discord or slack channel
+				new tweet on search term X
+				new file in a Dropbox folder
+				
+				you can literally define any kind of logic, have it "emit" an event, and build workflows on it
+				full moon ES
+				more realistic weather example, if too hot, do something
+				</aside>
+				</section>
+
+				<section>
+				<h2>Demo</h2>
+				<aside class="notes">
+login w/ backup person
+point out intro stuff on top
+New
+HTTP API 
+send test event
+add code step
+copy $respond 
+copy url and run
+go to workflow, show execution, show details 
+notice 2 of them, one is favicon
+edit the response to return steps.trigger.event.query, deploy
+show execution, modify code and rerun with input (make an error when you do body: { .. }
+
+name the workfloe
+				</aside>
+				</section>
+
+				<section>
+				<h2>Steps</h2>
+				<ul>
+				<li class="fragment">Custom code or pre-built/custom action</li>
+				<li class="fragment">Steps can be named</li>
+				<li class="fragment">Steps can have parameters</li>
+				<li class="fragment">Steps can access results of other steps</li>
+				<li class="fragment">Access to process.env too (good for secrets)</li>
+				</ul>
+				<aside class="notes">
+				for pre-built action, you _still_ get the code and can modify
+				</aside>
 				</section>
 
 				<section data-background="img/cat_qa.png" data-background-opacity="0.2">

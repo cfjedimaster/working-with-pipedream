@@ -26,3 +26,17 @@ From me:
 
 Every boring bit - done
 Every fun bit - for me!
+
+For login, use ray@camdenfamily.com
+
+demo 1:
+
+$respond({
+  status: 200,
+  headers: { "my-custom-header": "value" },
+  body: { message: "My custom response" }, // This can be any string, object, Buffer, or Readable stream
+});
+
+
+MAKE SURE I COVER:
+$checkpoint
