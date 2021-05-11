@@ -196,6 +196,101 @@ name the workfloe
 				</aside>
 				</section>
 
+				<section>
+				<h2>Demo</h2>
+				<aside class="notes">
+				go back and add more code 
+				we're going to demo a couple of things here at once
+
+				add check name steps
+				console.log(steps.trigger.event.query);
+if(!steps.trigger.event.query.name) {
+  steps.trigger.event.query.name = 'Bozo';
+}
+console.log(steps.trigger.event.query);
+
+dont do the consoles first
+show that its RO
+
+named exports, or a return value, steps.nodejs.$return_value.data
+
+				</aside>
+				</section>
+
+				<section>
+				<h2>Actions</h2>
+				<ul>
+				<li class="fragment">Pre-built steps</li>
+				<li class="fragment">Approx. 2 billion<sup>*</sup> available on Pipedream</li>
+				<li class="fragment">You can author these</li>
+				</ul>
+				<aside class="notes">
+				imagine you wrote a node step that was useful 
+				</aside>
+				</section>
+
+				<section>
+				<h2>"Real" Demo 1 - Version 1</h2>
+				<ul>
+				<li class="fragment">Hit a RSS feed and get entries</li>
+				<li class="fragment">Search for X in entries</li>
+				<li class="fragment">If any, email</li>
+				<li class="fragment">Show "Search RSS 0"</li>
+				</ul>
+				</section>
+
+				<section>
+					<img src="img/pdemail.png">
+				</section>
+
+				<section>
+				<pre><code data-trim>
+$send.email({
+  subject: "Your subject",
+  text: "Plain text email body",
+  html: "HTML email body"
+  include_collaborators: false,
+});
+</code></pre>
+				</section>
+
+				<section>
+				<h2>"Real" Demo 1 - Version 2</h2>
+				<ul>
+				<li class="fragment">Make code more shareable</li>
+				<li class="fragment">Demonstrate the big problem</li>
+				<li class="fragment">Modify "Search RSS 0"</li>
+				</ul>
+				<aside class="notes">
+				copy, rename to rss 1
+				modify code to use params
+
+				</aside>
+				</section>
+
+				<section>
+				<h2>Workflow Persistance</h2>
+				<ul>
+				<li class="fragment">$checkpoint</li>
+				<li class="fragment">Any JSON serializable object (or simple value)</li>
+				<li class="fragment">Workflow level (<code>$checkpoint</code>) or step level (<code>this.$checkpoint</code>)</li>
+				<li class="fragment">UI access to view/modify</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>"Real" Demo 1 - Version 3</h2>
+				<ul>
+				<li class="fragment">Remember the date of the latest blog entry</li>
+				<li class="fragment">Filter out older ones</li>
+				<li class="fragment">Update $checkpoint to now</li>
+				</ul>
+				<aside class="notes">
+				copy workflow again
+
+				</aside>
+				</section>
+
 				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
 				<h2>Q and A</h2>
 				<p>Be gentle please...</p>
