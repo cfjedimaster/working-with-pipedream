@@ -291,6 +291,125 @@ $send.email({
 				</aside>
 				</section>
 
+				<section>
+				<h2>"Real" Demo 1 - Version 4</h2>
+				<ul>
+				<li class="fragment">Kill the Schedule</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Auth Simplicity</h2>
+				<ul>
+				<li class="fragment">Actions with auths are far easier</li>
+				<li class="fragment">Cached service-wide</li>
+				<li class="fragment">Code access</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Demo</h2>
+				<ul>
+				<li class="fragment">Search Twitter for keyword</li>
+				<li class="fragment">On keyword, email tweet</li>
+				</ul>
+				<aside class="notes">
+				be sure to point folks to the Accounts tab when done so they can see that it can be re-used
+				</aside>
+				</section>
+
+				<section>
+				<h2>Errors in Pipedream</h2>
+				<ul>
+				<li class="fragment">Write perfect code!</li>
+				<li class="fragment">Errors still happen...</li>
+				<li class="fragment">Pipedream Error workflow (user specific)</li>
+				<li class="fragment">You can edit!</li>
+				</ul>
+				</section>
+
+				<section>
+					<img src="img/pderror.png">
+				</section>
+
+				<section>
+					<h2>Ray, show your Error workflow</h2>
+				</section>
+
+				<section>
+				<h2>Misc</h2>
+				<ul>
+				<li class="fragment">S3 Support</li>
+				</ul>
+				<aside class="notes">
+				Fancy way of saying where stuff ends up
+				</aside>
+				</section>
+
+				<section>
+				<pre><code>
+$send.s3({
+  bucket: "your-bucket-here",
+  prefix: "your-prefix/",
+  payload: event.body,
+});
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>Misc</h2>
+				<ul>
+				<li>S3 Support</li>
+				<li class="fragment">SQL Service</li>
+				</ul>
+				<aside class="notes">
+				Not a "proper" database, it's a append only JSON storage system, where you basically say
+				put this object in table X. SQL UI window you can run queries in and you can do it from workflows.
+				idea - use to store workflow errors
+				</aside>
+				</section>
+
+				<section>
+				<pre><code>
+$send.sql({
+  table: "your_table_name",
+  payload: event,
+});
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>Misc</h2>
+				<ul>
+				<li>S3 Support</li>
+				<li>SQL Service</li>
+				<li class="fragment">CLI (Event Sources and Actions)</li>
+				<li class="fragment">REST API</li>
+				</ul>
+				<aside class="notes">
+				Not a "proper" database, it's a append only JSON storage system, where you basically say
+				put this object in table X. SQL UI window you can run queries in and you can do it from workflows.
+				idea - use to store workflow errors
+				</aside>
+				</section>
+
+				<section>
+					<h2>Misc</h2>
+					<ul>
+					<li class="fragment">Checking Usage (Ray, show both)</li>
+					<li class="fragment">Docs: <a href="https://pipedream.com/docs" target="_new">pipedream.com/docs</a></li>
+					<li class="fragment">Slack: <a href="https://pipedream.com/docs/support/#slack" target="_new">pipedream-users</a></li>
+					<li class="fragment">Discourse: <a href="https://pipedream.com/community/" target="_new">pipedream.com/community/</a></li>
+					<li class="fragment">GitHub Discussions: <a href="https://github.com/PipedreamHQ/pipedream/discussions" target="_new">github.com/PipedreamHQ/pipedream/discussions</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<p>
+					<a href="https://pipedream.com/docs/apps/all-apps/" target="_new"><img src="img/appseverywhere.jpg"></a>
+					</p>
+				</section>
+
 				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
 				<h2>Q and A</h2>
 				<p>Be gentle please...</p>

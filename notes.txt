@@ -39,8 +39,7 @@ $respond({
 
 
 MAKE SURE I COVER:
-next slide, event sources
-modify my wf again
+auth demo is next
 next do a twitter search and show auth done easy
 
 $sql
