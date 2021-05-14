@@ -42,7 +42,8 @@ MAKE SURE I COVER:
 auth demo is next
 next do a twitter search and show auth done easy
 
-$sql
+show MY billing stats
+error 
 
 APP IDEAS:
 Read RSS, search for X, email results
